@@ -16,9 +16,15 @@ In DHT11 sensor there are four pins vcc,gnd,data(signal),NC while on the other h
 
 ### PIN CONNECTION
 
-In aurdino VCC,gnd,data pins of module are connected to +5v,gnd,any analog pin respectively of aurdino.
+In arduino VCC,gnd,data pins of module are connected to +5v,gnd,any analog pin respectively of arduino.
 
 ![pinconnection](/images/DHT11pinconnection.png)
+
+### CODE AND LIBRARIES
+
+For arduino DHT11 has special libraries for using module in a simple and effective manner. For coding in arduino
+install libraries, you can download it from following [link](https://www.arduinolibraries.info/libraries/dht-sensor-library).
+Extract the zip file in the libraries folder in your arduino ide.
 
 
 
