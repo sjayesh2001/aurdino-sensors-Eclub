@@ -6,4 +6,4 @@ post and a second terminal that is a spring that surrounds the center post. When
 the terminal consisting of the spring moves and shorts both terminals together momentarily. So, therefore output from this sensor
 is either 0 or 1.
 
-[pin diagram](/images/shocksensor.jpg)
+![pin diagram](/images/shocksensor.jpg)
