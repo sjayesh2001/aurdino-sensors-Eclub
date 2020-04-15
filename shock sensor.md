@@ -12,6 +12,7 @@ is either 0 or 1.
 
 * 1 * Arduino Uno board
 * 1 * USB cable
+* 1 * breadboard
 * 1 * shock sensor
 * DuPont Wires(Female to Male)
 
@@ -28,7 +29,7 @@ detect a shock.
 
 ![connection](/images/Arduino_KY-002_Keyes_Vibration_switch_module_connection-diagram.png)
 
-**Code**
+**Code**:-
 
     int val; // define a numeric variable val 
 
@@ -46,5 +47,8 @@ detect a shock.
 	}
     }
     
-
+* Now compile the program by clicking on the **Verify** button or by pressing **Ctrl+R**.
+* Now upload the program on your arduino board by clicking on the **upload** button or  by pressing **Ctrl+U**.
+* Either you can use **Built-in led** or you can connect an external led to a digital pin of arduino and changing the code
+accordingly.
 
