@@ -17,6 +17,16 @@ is either 0 or 1.
 
 **Principles**
 
+Let us a build a simple circuit using shock sensor. In this circuit the builtin led of arduino will light up whenever sensor will
+detect a shock.
+
+**Connections**
+
+* +ve terminal to +5v 
+* -ve terminal to gnd
+* signal(s) to digital pin 3 of arduino
+
+![connection](Arduino_KY-002_Keyes_Vibration_switch_module_connection-diagram.png)
 
 
 
