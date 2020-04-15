@@ -30,17 +30,19 @@ detect a shock.
 
 **Code**
 
+    int val; // define a numeric variable val 
+
     void setup () {
-	pinMode (Led, OUTPUT); // LED pin as output  
-	pinMode (shock, INPUT); // input from KY-002 sensor
+	pinMode (13, OUTPUT); // LED pin as output  
+	pinMode (3, INPUT); // input from KY-002 sensor
      } 
 
     void loop () {
-	val = digitalRead (shock); // read the value from KY-002
+	val = digitalRead (3); // read the value from KY-002
 	if (val == HIGH ) {// when sensor detects shock, LED flashes  
-		digitalWrite(Led, LOW);
+		digitalWrite(13, LOW);
 	} else {
-		digitalWrite (Led, HIGH);
+		digitalWrite (13, HIGH);
 	}
     }
     
