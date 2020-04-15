@@ -26,7 +26,7 @@ detect a shock.
 * -ve terminal to gnd
 * signal(s) to digital pin 3 of arduino
 
-![connection](Arduino_KY-002_Keyes_Vibration_switch_module_connection-diagram.png)
+![connection](/images/Arduino_KY-002_Keyes_Vibration_switch_module_connection-diagram.png)
 
 
 
