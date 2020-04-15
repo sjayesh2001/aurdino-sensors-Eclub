@@ -7,3 +7,13 @@ the terminal consisting of the spring moves and shorts both terminals together m
 is either 0 or 1.
 
 ![pin diagram](/images/shocksensor.jpg)
+
+**Components**
+
+_ 1 * Arduino Uno board
+_ 1 * USB cable
+_ 1 * shock sensor
+_ DuPont Wires(Female to Male)
+
+
+
