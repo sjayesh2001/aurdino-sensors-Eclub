@@ -30,7 +30,8 @@ detect a shock.
 
 **Code**
 
-'''javascript
+''' javascript
+
 void setup () {
 	pinMode (Led, OUTPUT); // LED pin as output  
 	pinMode (shock, INPUT); // input from KY-002 sensor
@@ -44,6 +45,7 @@ void loop () {
 		digitalWrite (Led, HIGH);
 	}
 }
+
 '''
 
 
