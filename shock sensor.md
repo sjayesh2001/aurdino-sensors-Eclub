@@ -10,10 +10,10 @@ is either 0 or 1.
 
 **Components**
 
-_ 1 * Arduino Uno board
-_ 1 * USB cable
-_ 1 * shock sensor
-_ DuPont Wires(Female to Male)
+* 1 * Arduino Uno board
+* 1 * USB cable
+* 1 * shock sensor
+* DuPont Wires(Female to Male)
 
 
 
