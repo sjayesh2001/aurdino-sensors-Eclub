@@ -30,7 +30,7 @@ detect a shock.
 
 **Code**
 
-'''javascript
+    javascript
 
 void setup () {
 	pinMode (Led, OUTPUT); // LED pin as output  
