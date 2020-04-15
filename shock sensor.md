@@ -15,5 +15,9 @@ is either 0 or 1.
 * 1 * shock sensor
 * DuPont Wires(Female to Male)
 
+**Principles**
+
+
+
 
 
