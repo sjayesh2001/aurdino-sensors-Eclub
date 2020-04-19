@@ -81,3 +81,17 @@ Type the following code in your arduino
     } 
     aLastState = aState; // Updates the previous state of the outputA with the current state
     }
+    
+**Step4:-**
+
+Now compile the program by clicking on the **Verify** button or by pressing **Ctrl+R**.
+
+**Step5:-**
+
+Now upload the program on your arduino board by clicking on the **upload** button or by pressing **Ctrl+U**
+
+**Step6:-**
+
+Open the **tools-->Serial Monitor** and rotate sensor with your hand and see changes
+
+![output](/rotary_encoder/images/Rotary-Encoder-Serial.png)
