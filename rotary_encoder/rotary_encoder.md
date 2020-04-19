@@ -23,3 +23,61 @@ We can notice that the two output signals are displaced at 90 degrees out of pha
 So if we count the steps each time the signal changes, from High to Low or from Low to High, we can notice at that time the two output
 signals have opposite values. Vice versa, if the encoder is rotating counter clockwise, the output signals have equal values. So 
 considering this, we can easily program our controller to read the encoder position and the rotation direction.
+
+**Example**
+
+Here we are going to see an example that how we can use rotary encoder to count the position at any instant of time.
+
+**Components**
+
+* 1 * Arduino Uno Board
+* 1 * USB cable
+* 1 * Rotary Encoder
+* Jumper wires 
+
+**Step1:-**
+
+![pinout](/rotary_encoder/images/Rotary-Encoder-Pinout.jpg)
+
+*Connections*
+
+* gnd and +ve terminal to GND and +5v respectively
+* CLK (output A) to D-6
+* DT (output B) to D-7
+
+We are not using switch pin here.
+
+**Step2:-**
+
+Type the following code in your arduino
+
+**Source Code**
+
+    #define outputA 6
+    #define outputB 7
+    int counter = 0; 
+    int aState;
+    int aLastState;  
+    void setup() { 
+     pinMode (outputA,INPUT);
+     pinMode (outputB,INPUT);
+   
+     Serial.begin (9600);
+     // Reads the initial state of the outputA
+     aLastState = digitalRead(outputA);   
+     } 
+    void loop() { 
+      aState = digitalRead(outputA); // Reads the "current" state of the outputA
+      // If the previous and the current state of the outputA are different, that means a Pulse has occured
+      if (aState != aLastState){     
+        // If the outputB state is different to the outputA state, that means the encoder is rotating clockwise
+        if (digitalRead(outputB) != aState) { 
+       counter ++;
+     } else {
+       counter --;
+     }
+     Serial.print("Position: ");
+     Serial.println(counter);
+    } 
+    aLastState = aState; // Updates the previous state of the outputA with the current state
+    }
