@@ -14,4 +14,4 @@ What we will use in this tutorial is an incremental rotary encoder and it’s th
 
 The encoder has a disk with evenly spaced contact zones that are connected to the common pin C and two other separate contact pins A and B, as illustrated below.
 
-![rotary principle](/rotary encoder/images/Output-Waveform-of-Rotary-Encoder.png)
+![rotaryprinciple](/rotary encoder/images/Output-Waveform-of-Rotary-Encoder.png)
