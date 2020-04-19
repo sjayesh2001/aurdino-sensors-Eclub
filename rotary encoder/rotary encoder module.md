@@ -6,7 +6,7 @@ In this tutorial we will learn how rotary encoder works and how to use it with A
 A rotary encoder is a type of position sensor which is used for determining the angular position of a rotating shaft. It generates an electrical signal, either analog or digital, according to the rotational movement.
 There are many types of rotary encoders on the basis of output signal and sensing technology.
 
-![types](/rotaryencoder/images/typesrotary.jpg)
+![types](/rotary_encoder/images/typesrotary.jpg)
 
 What we will use in this tutorial is an incremental rotary encoder and it’s the simplest position sensor to measure rotation.
 
@@ -14,4 +14,4 @@ What we will use in this tutorial is an incremental rotary encoder and it’s th
 
 The encoder has a disk with evenly spaced contact zones that are connected to the common pin C and two other separate contact pins A and B, as illustrated below.
 
-![rotaryprinciple](/rotaryencoder/images/Output-Waveform-of-Rotary-Encoder.png)
+![rotaryprinciple](/rotary_encoder/images/Output-Waveform-of-Rotary-Encoder.png)
