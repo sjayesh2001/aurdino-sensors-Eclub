@@ -62,3 +62,133 @@ S1 |	Pin 9
 S2 |	Pin 12
 S3 |	Pin 11
 OUT	| Pin 10
+
+**Step2:-**
+
+Copy and paste the following code in your arduino console. This code is self explanatory
+
+    int s0_pin =8;
+
+    int s1_pin =9;
+
+    int s2_pin =12;
+
+    int s3_pin =11;
+
+    int out_pin =10;
+
+
+    void setup() {
+
+    Serial.begin(9600);
+    
+    // defining pinmodes of different pins
+
+    pinMode(s0_pin, OUTPUT);
+
+    pinMode(s1_pin, OUTPUT);
+
+    pinMode(s2_pin, OUTPUT);
+
+    pinMode(s3_pin, OUTPUT);
+
+    pinMode(out_pin, INPUT);
+    
+    // Setting frequency-scaling to 20%
+
+    digitalWrite(s0_pin,HIGH);
+
+    digitalWrite(s1_pin,LOW);
+
+    }
+
+
+    void loop() {
+    
+    // Setting red filtered photodiodes to be read
+
+    digitalWrite(s2_pin,LOW);
+
+    digitalWrite(s3_pin,LOW);
+    
+    // Reading the output frequency in red_color
+
+    int red_color = pulseIn(out_pin, LOW);
+    
+    //Remaping the value of the frequency to 0 to 255
+
+    red_color = map(red_color, 25,72,255,0);
+
+    delay(50);
+    
+    // Setting Green filtered photodiodes to be read
+
+    digitalWrite(s2_pin,HIGH);
+
+    digitalWrite(s3_pin,HIGH);
+    
+    // Reading the output frequency in green_color
+
+    int green_color = pulseIn(out_pin, LOW);
+    
+    //Remaping the value of the frequency to 0 to 255
+
+    green_color = map(green_color, 30,90,255,0);
+
+    delay(50);
+    
+     // Setting Blue filtered photodiodes to be read
+
+    digitalWrite(s2_pin,LOW);
+
+    digitalWrite(s3_pin,HIGH);
+    
+    // Reading the output frequency in blue_color
+
+    int blue_color = pulseIn(out_pin, LOW);
+    
+    //Remaping the value of the frequency to 0 to 255
+
+    blue_color = map(blue_color, 25,70,255,0);
+
+    delay(50);
+    
+    //printing RED color intensity
+
+    Serial.print("RED: ");
+
+    Serial.print(red_color);
+
+    Serial.print("  ");
+    
+    //printing GREEN color intensity
+ 
+    Serial.print("GREEN: ");
+
+    Serial.print(green_color);
+
+    Serial.print("  ");
+    
+    //printing BLUE color intensity
+
+    Serial.print("BLUE: ");
+
+    Serial.print(blue_color);
+
+    Serial.println("  ");
+
+    delay(1000);
+
+    }
+
+**Step3:-**
+
+Now compile the program by clicking on the **Verify** button or by pressing **Ctrl+R**.
+
+**Step4:-**
+
+Now upload the program on your arduino board by clicking on the **upload** button or by pressing **Ctrl+U**
+
+**Step5:-**
+
+Open the **tools-->Serial Monitor** and see the results
