@@ -37,3 +37,28 @@ LOW |	HIGH |	2%
 HIGH | LOW	| 20%
 HIGH |	HIGH |	100%
 
+In our code, the frequency is set at 20%. You can set the frequency to any other value (you desire), but the output values will change
+according to the set frequency and you will have to map the color values relative to the set frequency.
+
+**Components**
+
+* 1 * Arduino Uno Board
+* 1 * USB cable
+* 1 * TCS230 (RGB color sensor)
+* Jumper wires 
+
+### Experimental Procedures
+
+**Step1:-**
+
+Connect your sensor with arduino as shown in following table
+
+TCS230 |	Arduino Uno
+-------|-------------
+VCC |	5V
+GND |	GND
+S0 |	Pin 8
+S1 |	Pin 9
+S2 |	Pin 12
+S3 |	Pin 11
+OUT	| Pin 10
