@@ -51,12 +51,12 @@ Connect your sensor with arduino as shown in following diagram
       if (val == LOW) // when the Hall sensor detects a magnetic field, Arduino LED lights up
       {
         digitalWrite (Led, HIGH);
-        Serial.println("Magnetic field detected");
+        Serial.println("detect");
       }
       else
       {
         digitalWrite (Led, LOW);
-        Serial.println("No magnetic field detected");
+        Serial.println("Not detected");
       }
       delay(1000);
     }
@@ -74,3 +74,5 @@ Now upload the program on your arduino board by clicking on the **upload** butto
 **Step5:-**
 
 Open the **tools-->Serial Monitor** and see the results by bringing the magnet near the sensor.
+
+![SM](/Hall_effect_sensor/images/screenhallm.jpg)
