@@ -9,7 +9,7 @@ The **KY-003** is a Hall effect sensor. If no magnetic field is present, the sig
 presented to the sensor, the signal line goes LOW, at the same time the LED on the sensor lights up. This informaton will be used by us in 
 our code.
 
-![pinout](/Hall_effect_sensor/images/hallsensor.jpg)
+![pinout](/Hall_effect_sensor/images/hall-effect.jpg)
 
 **Components**
 
