@@ -13,7 +13,7 @@ colors.
 The sensor has 8 pins; S0, S1 are for setting the frequency and S2, S3 are for reading the color values. The out pin is supposed to give 
 the output to  Arduino in the form of a square wave. The other pins are for powering the sensor.
 
-![pin](/RGB_Sensor/images/tcs3200-tcs230-color-sensor-500x500.jpg)
+![pin](/RGB_Sensor/images/Color_sensor_TCS_320_pin-out.png)
 
 To read colors from sensors, we will be using the S2 and S3 pins. The pin combination for reading the RGB colors is as follows
 
@@ -192,3 +192,5 @@ Now upload the program on your arduino board by clicking on the **upload** butto
 **Step5:-**
 
 Open the **tools-->Serial Monitor** and see the results
+
+![serialRGB](/RGB_Sensor/images/serialRGB.jpg)
